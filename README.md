@@ -1,6 +1,6 @@
 # path-utils
 
-Utility library for [`std::path::Path`] and [`std::path::PathBuf`].
+Utility library for `std::path::Path` and `std::path::PathBuf`.
 
 ```rust
 use std::path::Path;
