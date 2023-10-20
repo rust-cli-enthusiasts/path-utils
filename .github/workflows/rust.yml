@@ -8,6 +8,9 @@ on:
       - 'Cargo.toml'
       - '**.rs'
   push:
+    branches:
+      - main
+      - wip/next
     paths:
       - 'Cargo.toml'
       - '**.rs'
