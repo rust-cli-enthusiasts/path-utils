@@ -4,19 +4,12 @@ version: 2
 
 updates:
 
-  - package-ecosystem: cargo
-    directory: /
-    schedule:
-      interval: weekly
-      day: sunday
-    assignees:
-      - wookietreiber
-
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
-      day: sunday
+      day: monday
+      time: '06:00'
     assignees:
       - wookietreiber
 
