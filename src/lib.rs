@@ -72,15 +72,19 @@ mod tests {
 
     #[test]
     fn extensions_lossy() {
-        assert!(Path::new("/path/to/file")
-            .extensions_lossy()
-            .next()
-            .is_none());
+        assert!(
+            Path::new("/path/to/file")
+                .extensions_lossy()
+                .next()
+                .is_none()
+        );
 
-        assert!(PathBuf::from("/path/to/.file")
-            .extensions_lossy()
-            .next()
-            .is_none());
+        assert!(
+            PathBuf::from("/path/to/.file")
+                .extensions_lossy()
+                .next()
+                .is_none()
+        );
 
         assert_eq!(exts_lossy("/path/to/file.tar"), ["tar"]);
         assert_eq!(exts_lossy("/path/to/.file.tar"), ["tar"]);
