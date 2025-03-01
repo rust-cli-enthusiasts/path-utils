@@ -9,5 +9,5 @@ repository = "https://github.com/rust-cli-enthusiasts/path-utils"
 documentation = "https://docs.rs/path-utils"
 keywords = ["path", "util", "utilities"]
 categories = ["command-line-interface", "filesystem"]
-edition = "2021"
-rust-version = "1.56.0"
+edition = "2024"
+rust-version = "1.85"
